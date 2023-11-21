@@ -67,9 +67,9 @@ docker-compose ps
 ![Image of code](/assets/wirguard_up.png)
 
 
-## How to connect to the VPN 
+## Make sure you can connect to the VPN 
 
-To check the clients and server 
+You will need to run this command 
 ```shell 
 docker exec -it wireguard wg 
 ```
@@ -81,7 +81,24 @@ If you go into the config file within your server and you follow the path /opt/w
 
 ![Image of code](/assets/peer1.png_QR.png)
 
-## Connecting my phone with the QR code 
+## Test VPN on phone 
+
+Show the QR code
+```shell
+docker exec -it wireguard /app/show-peer 1
+```
+![Image of code](/assets/peer1_QR.png)
+
+Scan that with your phone and connect 
+![Image of code](/assets/phone.png)
+![Image of code](/assets/phone2.png)
+
+
+#### Test was successful
+
+## Test VPN on desktop
+![Image of code](/assets/computer_test_website.png)
+
 
 
 
