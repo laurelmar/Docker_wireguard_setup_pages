@@ -1,18 +1,41 @@
-## 1. Docker project reference 
+## 1. Project references  
 
-Links/resources: https://docs.docker.com/engine/install/ubuntu/ , https://www.hostinger.com/tutorials/run-docker-wordpress
+Links/resources: https://youtu.be/GZRTnP4lyuo?si=8wtTXg_t7-BSSFMX , https://github.com/christianlempa/videos/tree/main/wireguard-docker
 
-## 2. Download process
- Make sure everything old is gone 
-```shell 
-for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
+
+## 2. Droplet set up
+
+The first part of this project is making sure you set up your droplet in digital ocean as Ubuntu 20.04 
+ - I configured it with a password
+
+![Image of code](/assets/Launch_and_signin.png)
+
+
+#### Sign into your VPN using terminal to ssh in
+
+
+## 3. Docker/ docker-compose
+
+### Tools
+```shell
+sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
 ```
-
-Update apt-get
+### docker-compose
+installing docker compose
+```shell
+sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
 
 ```shell
-sudo apt-get update
+sudo chmod +x /usr/local/bin/docker-compose
 ```
+
+
+
+
+
+
+
 
 Add Docker's official GPG key:
 ```shell
