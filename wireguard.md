@@ -21,14 +21,16 @@ The first part of this project is making sure you set up your droplet in digital
 sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
 ```
 ### docker-compose
-installing docker compose
+Installing docker compose 
 ```shell
 sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
 
+Set permissions
 ```shell
 sudo chmod +x /usr/local/bin/docker-compose
 ```
+
 
 
 
