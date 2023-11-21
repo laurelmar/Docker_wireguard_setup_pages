@@ -50,8 +50,17 @@ sudo mkdir /opt/wireguard-server
 - Make sure you change the PUID, GUID, TZ, SERVERURL, and also PEERs for how many people will be connecting to your VPN
 - I said PEERS=2 because I will be testing this on my phone and computer
 
-### Once done you can you can launch wireguard with the command
+### Once done you can you can launch your wireguard server with the command
 
 ```shell
 docker-compose up -d
 ```
+![Image of code](/assets/Launch_wireguard.png)
+
+## check to make sure your server is up 
+
+```shell
+docker-compose ps
+```
+![Image of code](/assets/wireguard_up.png)
+
