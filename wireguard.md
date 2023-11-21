@@ -8,11 +8,11 @@ Links/resources: https://youtu.be/GZRTnP4lyuo?si=8wtTXg_t7-BSSFMX , https://gith
 The first part of this project is making sure you set up your droplet in digital ocean as Ubuntu 20.04 
  - I configured it with a password
 
-![Image of code](/assets/Launch_and_signin.png)
-
+![Image of code](/assets/ip_droplet.png)
 
 #### Sign into your VPN using terminal to ssh in
 
+![Image of code](/assets/Launch_and_signin.png)
 
 ## 3. Docker/ docker-compose
 
@@ -31,7 +31,24 @@ Set permissions
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
+![Image of code](/assets/sudo_curl_L.png)
 
+
+## Setting up Wireguard
+
+Make sure you are in /opt or making wireguard in /opt
+
+```shell
+sudo mkdir /opt/wireguard-server
+```
+![Image of code](/assets/in_opt.png)
+
+####cd into /opt/wireguard-server/ and create your yaml or yml file
+
+![Image of code](/assets/yaml_file.png)
+
+- Make sure you change the PUID, GUID, TZ, SERVERURL, and also PEERs for how many people will be connecting to your VPN
+- I said PEERS=2 because I will be testing this on my phone and computer
 
 
 
