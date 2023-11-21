@@ -36,6 +36,8 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 ## Setting up Wireguard
 
+I had some trouble in this part becuase I got my files in the wrong places and as a result my QR code didnt work. I found that if this happens just take down the server if it is already up using ' docker stop wireguard_server', move what you need to around, and relaunch it. 
+
 Make sure you are in /opt or making wireguard in /opt
 
 ```shell
