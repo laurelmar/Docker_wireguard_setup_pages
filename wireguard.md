@@ -89,11 +89,6 @@ docker exec -it wireguard /app/show-peer 1
 ```
 ![Image of code](/assets/peer1_QR.png)
 
-Scan that with your phone and connect 
-![Image of code](/assets/phone.png)
-![Image of code](/assets/phone2.png)
-
-
 #### Test was successful
 
 ## Test VPN on desktop
