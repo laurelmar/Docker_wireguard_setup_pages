@@ -1,0 +1,10 @@
+# Site Settings
+
+title: "Docker - Wordpress Project"
+
+# Author Info
+
+author: Laurel Martich
+email: 
+
+exclude: [README.md]
