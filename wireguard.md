@@ -59,10 +59,38 @@ docker-compose up -d
 ```
 ![Image of code](/assets/Launch_wireguard.png)
 
-## check to make sure your server is up 
+## check to make sure your server is up
 
 ```shell
 docker-compose ps
 ```
-![Image of code](/assets/wireguard_up.png)
+![Image of code](/assets/wirguard_up.png)
+
+
+## How to connect to the VPN 
+
+To check the clients and server 
+```shell 
+docker exec -it wireguard wg 
+```
+![Image of code](/assets/Public_private.png)
+
+If you go into the config file within your server and you follow the path /opt/wireguard-server/config/peer1 you can see where the QR code file 
+
+![Image of code](/assets/config_files.png)
+
+![Image of code](/assets/peer1.png_QR.png)
+
+## Connecting my phone with the QR code 
+
+
+
+
+
+
+
+
+
+
+
 
