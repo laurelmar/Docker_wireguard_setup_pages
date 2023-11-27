@@ -89,13 +89,22 @@ docker exec -it wireguard /app/show-peer 1
 ```
 ![Image of code](/assets/peer1_QR.png)
 
-![Image of code](/assets/phone_screen.png)
-![Image of code](/assets/Iphone_screenshot.png)
+
+Before 
+![Image of code](/assets/phone_ip.png)
+
+After turning on VPN:
+![Image of code](/assets/Interface_phone.png)
+![Image of code](/assets/After_change.png)
 
 #### Test was successful
 
 ## Test VPN on desktop
-![Image of code](/assets/computer_test_website.png)
+![Image of code](/assets/ip_before.png)
+
+After turning on VPN:
+![Image of code](/assets/Wireguard_Active.png)
+![Image of code](/assets/ip_after_comp.png)
 
 
 
