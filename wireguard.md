@@ -90,10 +90,11 @@ docker exec -it wireguard /app/show-peer 1
 ![Image of code](/assets/peer1_QR.png)
 
 
-## Test VPN on computer
+
+## Test VPN on iphone
 ![Image of code](/assets/phone_ip.png)
 
-After turning on VPN:
+### After turning on VPN:
 ![Image of code](/assets/Interface_phone.png)
 ![Image of code](/assets/After_change.png)
 
